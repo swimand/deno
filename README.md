@@ -1,3 +1,8 @@
+# Example GitHub Action Workflow
+
+This is an example of a GitHub Action workflow that sets up Deno and runs tests.
+
+```yaml
 name: Run Tests
 
 on: [push, pull_request]
@@ -13,7 +18,8 @@ jobs:
       - name: Set up Deno
         uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.x
+          deno-version: v1.x
 
       - name: Run tests
         run: deno test
+```
