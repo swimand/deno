@@ -9,3 +9,7 @@ async function bootstrap() {
 if (import.meta.main) {
   bootstrap();
 }
+
+export function add(a: number, b: number): number {
+  return a + b;
+}
